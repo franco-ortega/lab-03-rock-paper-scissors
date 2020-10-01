@@ -1,3 +1,6 @@
+import { getRandomThrow } from './get-random-throw.js';
+
+
 // import functions and grab DOM elements
 /*const gameButton = document.querySelector(':checked');*/
 const clickButton = document.querySelector('#click-button');
@@ -21,30 +24,33 @@ console.log(wins, losses, draws);
 // set event listeners to update state and DOM
 
 
-
-
 clickButton.addEventListener('click', () => {
 
     const gameButton = document.querySelector(':checked');
     const userPicks = gameButton.value;
 console.log(userPicks + ' selected by user');
     
-    const getRandomThrow = Math.ceil(Math.random() * 3);
-console.log(getRandomThrow);
+//    const getRandomThrow = Math.ceil(Math.random() * 3);
+//console.log(getRandomThrow);
+
+
+const randomThrow = getRandomThrow();
+console.log(randomThrow + ' random throw');
+
 
 //Now to conver getRandomThrow to a 'string'
 
-    function randomThrowWord() {
-        if (getRandomThrow === 1) {
+    function convertToString() {
+        if (randomThrow === 1) {
             return 'rock';
-        } else if (getRandomThrow === 2) {
+        } else if (randomThrow === 2) {
             return 'paper'; 
-        } else if (getRandomThrow === 3) {
+        } else if (randomThrow === 3) {
             return 'scissors';
         }    
     }
     
-    const computerChoices = randomThrowWord();
+    const computerChoices = convertToString();
 console.log(computerChoices + ' selected by computer');
 
 
