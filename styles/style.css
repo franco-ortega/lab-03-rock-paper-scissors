@@ -123,3 +123,15 @@ footer {
     }
 
   }
+
+
+
+  input[type="radio"]:checked {
+      transform: scale(2);
+  }
+
+  input[type="radio"]:checked + img {
+    transform: scale(2);
+    display: none;
+    border: 5px solid black;
+}
