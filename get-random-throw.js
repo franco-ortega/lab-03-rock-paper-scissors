@@ -1,6 +1,18 @@
 export function getRandomThrow() { 
-    return Math.ceil(Math.random() * 3);
-console.log(getRandomThrow);
+    const randomThrow = Math.ceil(Math.random() * 3);
+//console.log(getRandomThrow);
+
+
+if (randomThrow === 1) {
+    return 'rock';
+} else if (randomThrow === 2) {
+    return 'paper'; 
+} else if (randomThrow === 3) {
+    return 'scissors';
+}    
+
+
+
 }
 
 export function didUserWin(userPick, computerChoice) {

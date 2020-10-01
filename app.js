@@ -38,11 +38,14 @@ console.log(userPicks + ' selected by user');
 
 
 
-
+/*
 const randomThrow = getRandomThrow();
 console.log(randomThrow + ' random throw');
+*/
 
-const computerChoices = convertToString();
+
+
+const computerChoices = getRandomThrow();
 console.log(computerChoices + ' selected by computer');
 
 
@@ -107,6 +110,7 @@ function didUserWin(userPick, computerChoice) {
     }
 */
 
+/*
 function convertToString() {
     if (randomThrow === 1) {
         return 'rock';
@@ -116,6 +120,7 @@ function convertToString() {
         return 'scissors';
     }    
 }
+*/
 
 
 const finalAnswer = didUserWin(userPicks, computerChoices);
