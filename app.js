@@ -1,4 +1,4 @@
-import { getRandomThrow } from './get-random-throw.js';
+import { getRandomThrow, didUserWin } from './get-random-throw.js';
 
 
 // import functions and grab DOM elements
@@ -24,22 +24,31 @@ console.log(wins, losses, draws);
 // set event listeners to update state and DOM
 
 
+// ***********START OF BUTTON**************
 clickButton.addEventListener('click', () => {
 
-    const gameButton = document.querySelector(':checked');
-    const userPicks = gameButton.value;
-console.log(userPicks + ' selected by user');
     
 //    const getRandomThrow = Math.ceil(Math.random() * 3);
 //console.log(getRandomThrow);
+
+const gameButton = document.querySelector(':checked');
+const userPicks = gameButton.value;
+console.log(userPicks + ' selected by user');
+
+
+
 
 
 const randomThrow = getRandomThrow();
 console.log(randomThrow + ' random throw');
 
+const computerChoices = convertToString();
+console.log(computerChoices + ' selected by computer');
+
 
 //Now to conver getRandomThrow to a 'string'
 
+/*
     function convertToString() {
         if (randomThrow === 1) {
             return 'rock';
@@ -48,10 +57,9 @@ console.log(randomThrow + ' random throw');
         } else if (randomThrow === 3) {
             return 'scissors';
         }    
-    }
-    
-    const computerChoices = convertToString();
-console.log(computerChoices + ' selected by computer');
+    };
+  */
+
 
 
 //Now to compare userPick to computerChoice to find out who wins
@@ -66,7 +74,7 @@ console.log(computerChoices + ' selected by computer');
         - Scissors + Paper = WIN
         - Scissors + Rock = LOSS
  */
-
+/*
 function didUserWin(userPick, computerChoice) {
 
     if (userPick === 'rock' && computerChoice === 'rock') {
@@ -97,9 +105,18 @@ function didUserWin(userPick, computerChoice) {
         console.log('You win!');
         return 'You win!'
     }
+*/
 
+function convertToString() {
+    if (randomThrow === 1) {
+        return 'rock';
+    } else if (randomThrow === 2) {
+        return 'paper'; 
+    } else if (randomThrow === 3) {
+        return 'scissors';
+    }    
+}
 
-};
 
 const finalAnswer = didUserWin(userPicks, computerChoices);
 
@@ -120,4 +137,8 @@ winsSpan.textContent = wins;
 lossesSpan.textContent = losses;
 drawsSpan.textContent = draws;
 
-} )
+});
+// ***********END OF BUTTON**************
+
+
+
