@@ -17,7 +17,6 @@
         ROCK PAPER SCISSORS
     </header>
     <main class="main">
-
             <section class="rules">
                 Do you want to play the Rock, Paper, Scissors game? Here is how it works:
                 <ul>
@@ -27,27 +26,24 @@
                 </ul>
                  Select one of the options below and click PLAY to see if you will win, lose, or draw. Give it a go!
             </section>
-
-            
             <section class ="game-play">
                 <label>
-                    <input type="radio" name="game" value="rock" id="rock-button"><img src="./assets/rock.jpeg" alt="rock"></button>
-                    <input type="radio" name="game" value="paper" id="paper-button"><img src="./assets/paper.jpeg" alt="paper"></button>
-                    <input type="radio" name="game" value="scissors" id="scissors-button"><img src="./assets/scissors.jpeg" alt="scissors"></button>
+                    <input type="radio" name="game" value="rock" id="rock-button"><img src="./assets/rock.jpeg" alt="rock">
+                    <input type="radio" name="game" value="paper" id="paper-button"><img src="./assets/paper.jpeg" alt="paper">
+                    <input type="radio" name="game" value="scissors" id="scissors-button"><img src="./assets/scissors.jpeg" alt="scissors">
                 </label>
                 <br>
-                <button id="click-button">PLAY</button>
+                <button id="play-button">PLAY</button>
                 <br>
                 <span id="thrown-span"></span>
                 <br>
                 <span id="message-span">Will you win, lose, or draw?</span>
                 <br>
-                Results: <span id="results-span"></span>
-            </section>
-
-            
+                <span id="results-span"></span>
+                <br>
+                <button id="reset-button">Reset</button>
+            </section>          
     </main>
-
     <script type="module" src="app.js"></script>
 </body>
 
