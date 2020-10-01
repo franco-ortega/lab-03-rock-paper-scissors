@@ -62,7 +62,3 @@ input[type="radio"] + img {
 input[type="radio"]:checked + img {
     transform: scale(1.15);
 }
-
-span {
-    height: 30px;
-}
