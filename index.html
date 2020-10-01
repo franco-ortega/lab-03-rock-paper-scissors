@@ -14,38 +14,38 @@
 
 <body>
     <header>
-        **********ROCK PAPER SCISSORS**********
+        ROCK PAPER SCISSORS
     </header>
-    <main>
-        <section class="main-section">
+    <main class="main">
 
-            <h2>
-                RULES
-            </h2>
+            <section class="rules">
+                Do you want to play the Rock, Paper, Scissors game? Here is how it works:
+                <ul>
+                    <li>Rock beats scissors.</li>
+                    <li>Scissors beats paper.</li>
+                    <li>Paper beats rock.</li>
+                </ul>
+                 Select one of the options below and click PLAY to see if you will win, lose, or draw. Give it a go!
+            </section>
 
-            <p>
+            
+            <section class ="game-play">
                 <label>
-                    <input type="radio" name="game" value="rock" id="rock-button" checked>ROCK</button>
-                    <input type="radio" name="game" value="paper" id="paper-button">PAPER</button>
-                    <input type="radio" name="game" value="scissors" id="scissors-button">SCISSORS</button>
+                    <input type="radio" name="game" value="rock" id="rock-button"><img src="./assets/rock.jpeg" alt="rock"></button>
+                    <input type="radio" name="game" value="paper" id="paper-button"><img src="./assets/paper.jpeg" alt="paper"></button>
+                    <input type="radio" name="game" value="scissors" id="scissors-button"><img src="./assets/scissors.jpeg" alt="scissors"></button>
                 </label>
                 <br>
-                <button id="click-button">CLICK</button>
+                <button id="click-button">PLAY</button>
                 <br>
-                COMPUTER CHOICE: <span id="thrown-span"></span>
+                <span id="thrown-span"></span>
                 <br>
                 <span id="message-span">Will you win, lose, or draw?</span>
-<!--                <br>
-                WINS: <span id="wins-span">0</span>
                 <br>
-                LOSSES: <span id="losses-span">0</span>
-                <br>
-                DRAWS: <span id="draws-span">0</span>
--->                <br>
                 Results: <span id="results-span"></span>
-            </p>
+            </section>
 
-        </section>
+            
     </main>
 
     <script type="module" src="app.js"></script>

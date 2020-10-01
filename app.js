@@ -15,6 +15,7 @@ let draws = 0;
 console.log(`initial ${wins} wins, ${losses} losses, ${draws} draws`);
 console.log(wins, losses, draws);
 
+
 // ***********START OF BUTTON**************
 clickButton.addEventListener('click', () => {
 
@@ -39,20 +40,10 @@ console.log(computerChoices + ' selected by computer');
 
 console.log(wins, losses, draws);
 
-    thrownSpan.textContent = computerChoices;
-
- /*   
-    winsSpan.textContent = wins;
-    lossesSpan.textContent = losses;
-    drawsSpan.textContent = draws;
-*/
-
+    thrownSpan.textContent = `Computer chose: ${computerChoices}.`;
     resultsSpan.textContent = `Wins: ${wins}; Losses ${losses}; Draws: ${draws}`;
-
-
 });
 // ***********END OF BUTTON**************
-console.log(resultsSpan);
 
 
 
