@@ -22,6 +22,13 @@ section {
 img {
     height: 225px;
     width: auto;
+    margin: 15px;
+    border-radius: 20px;
+    border: purple 2px solid;
+}
+
+div {
+    text-align: center;
 }
 
 .rules {
@@ -32,17 +39,28 @@ img {
 
 .game-play {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+}
+
+.play-area {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+
 }
 
 input[type="radio"] {
-      transform: scale(1);
+    display: none;
+}
+
+input[type="radio"] + img {
+    cursor: pointer;
 }
 
 input[type="radio"]:checked + img {
-    transform: scale(1);
+    transform: scale(1.15);
 }
 
 span {

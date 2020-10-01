@@ -24,25 +24,37 @@
                     <li>Scissors beats paper.</li>
                     <li>Paper beats rock.</li>
                 </ul>
-                 Select one of the options below and click PLAY to see if you will win, lose, or draw. Give it a go!
+                <br>
+                 Click on the image of your selection below and press PLAY to see if you will win, lose, or draw. Give it a go! Also, you can reset the score anytime by pressing RESET.
             </section>
+
             <section class ="game-play">
                 <label>
-                    <input type="radio" name="game" value="rock" id="rock-button"><img src="./assets/rock.jpeg" alt="rock">
-                    <input type="radio" name="game" value="paper" id="paper-button"><img src="./assets/paper.jpeg" alt="paper">
-                    <input type="radio" name="game" value="scissors" id="scissors-button"><img src="./assets/scissors.jpeg" alt="scissors">
+                    <input type="radio" name="game" value="rock" id="rock-button">
+                    <img src="./assets/rock.jpeg" alt="rock">
+                </label><label>
+                        <input type="radio" name="game" value="paper" id="paper-button">
+                    <img src="./assets/paper.jpeg" alt="paper">
+                </label><label>
+                    <input type="radio" name="game" value="scissors" id="scissors-button">
+                    <img src="./assets/scissors.jpeg" alt="scissors">
                 </label>
-                <br>
+            </section>
+            <section class="play-area">
                 <button id="play-button">PLAY</button>
                 <br>
+                <div>
                 <span id="thrown-span"></span>
                 <br>
                 <span id="message-span">Will you win, lose, or draw?</span>
                 <br>
                 <span id="results-span"></span>
+            </div>
                 <br>
                 <button id="reset-button">Reset</button>
-            </section>          
+            </section>
+
+
     </main>
     <script type="module" src="app.js"></script>
 </body>
