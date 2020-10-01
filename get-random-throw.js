@@ -10,25 +10,25 @@ export function getRandomThrow() {
     }
 };
 
-export function didUserWin(userPick, computerChoice) {
+export function doesUserWin(player, computer) {
 
-    if (userPick === 'rock' && computerChoice === 'rock') {
+    if (player === 'rock' && computer === 'rock') {
         return 'Draw!'
-    } else if  (userPick === 'rock' && computerChoice === 'paper') {
+    } else if  (player === 'rock' && computer === 'paper') {
         return 'You lose.'
-    } else if  (userPick === 'rock' && computerChoice === 'scissors') {
+    } else if  (player === 'rock' && computer === 'scissors') {
         return 'You win!'
-    } else if (userPick === 'paper' && computerChoice === 'paper') {
+    } else if (player === 'paper' && computer === 'paper') {
         return 'Draw!'
-    } else if  (userPick === 'paper' && computerChoice === 'scissors') {
+    } else if  (player === 'paper' && computer === 'scissors') {
         return 'You lose.'
-    } else if  (userPick === 'paper' && computerChoice === 'rock') {
+    } else if  (player === 'paper' && computer === 'rock') {
         return 'You win!'
-    } else if (userPick === 'scissors' && computerChoice === 'scissors') {
+    } else if (player === 'scissors' && computer === 'scissors') {
         return 'Draw!'
-    } else if  (userPick === 'scissors' && computerChoice === 'rock') {
+    } else if  (player === 'scissors' && computer === 'rock') {
         return 'You lose.'
-    } else if  (userPick === 'scissors' && computerChoice === 'paper') {
+    } else if  (player === 'scissors' && computer === 'paper') {
         return 'You win!'
     }
 };

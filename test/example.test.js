@@ -1,5 +1,4 @@
-// IMPORT MODULES under test here:
-import { getRandomThrow, didUserWin } from '../get-random-throw.js';
+import { getRandomThrow, doesUserWin } from '../get-random-throw.js';
 
 const test = QUnit.test;
 
@@ -83,15 +82,15 @@ test('function should return result of user choice vs randomly generated choice 
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actualA = didUserWin(userA, computerA);
-    const actualB = didUserWin(userB, computerB);
-    const actualC = didUserWin(userC, computerC);
-    const actualD = didUserWin(userD, computerD);
-    const actualE = didUserWin(userE, computerE);
-    const actualF = didUserWin(userF, computerF);
-    const actualG = didUserWin(userG, computerG);
-    const actualH = didUserWin(userH, computerH);
-    const actualI = didUserWin(userI, computerI);
+    const actualA = doesUserWin(userA, computerA);
+    const actualB = doesUserWin(userB, computerB);
+    const actualC = doesUserWin(userC, computerC);
+    const actualD = doesUserWin(userD, computerD);
+    const actualE = doesUserWin(userE, computerE);
+    const actualF = doesUserWin(userF, computerF);
+    const actualG = doesUserWin(userG, computerG);
+    const actualH = doesUserWin(userH, computerH);
+    const actualI = doesUserWin(userI, computerI);
 
     //Expect
     // Make assertions about what is expected versus the actual result
