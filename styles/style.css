@@ -37,7 +37,7 @@ div {
     align-items: center;
 }
 
-.game-play {
+.player-options {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,5 +64,5 @@ input[type="radio"]:checked + img {
 }
 
 span {
-    height: 25px;
+    height: 30px;
 }

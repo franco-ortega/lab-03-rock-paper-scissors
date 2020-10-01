@@ -38,11 +38,16 @@ clickButton.addEventListener('click', () => {
 // ***********END OF PLAY BUTTON**************
 
 
+const resetSpan = document.querySelector('#reset-span');
+let resets = 0;
+
 // ***********START OF RESET BUTTON***********
 resetButton.addEventListener('click', () => {
     wins = 0;
     losses = 0;
     draws = 0;
+    resets ++;
     resultsSpan.textContent = `Wins: ${wins}; Losses ${losses}; Draws: ${draws}`;
+    resetSpan.textContent = resets;
 })
 // ***********END OF RESET BUTTON***********

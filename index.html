@@ -13,10 +13,13 @@
 </head>
 
 <body>
+
     <header>
         ROCK PAPER SCISSORS
     </header>
+
     <main class="main">
+
             <section class="rules">
                 Do you want to play the Rock, Paper, Scissors game? Here is how it works:
                 <ul>
@@ -28,32 +31,36 @@
                  Click on the image of your selection below and press PLAY to see if you will win, lose, or draw. Give it a go! Also, you can reset the score anytime by pressing RESET.
             </section>
 
-            <section class ="game-play">
+            <section class ="player-options">
                 <label>
                     <input type="radio" name="game" value="rock" id="rock-button">
                     <img src="./assets/rock.jpeg" alt="rock">
-                </label><label>
-                        <input type="radio" name="game" value="paper" id="paper-button">
+                </label>
+                <label>
+                    <input type="radio" name="game" value="paper" id="paper-button">
                     <img src="./assets/paper.jpeg" alt="paper">
-                </label><label>
+                </label>
+                <label>
                     <input type="radio" name="game" value="scissors" id="scissors-button">
                     <img src="./assets/scissors.jpeg" alt="scissors">
                 </label>
             </section>
+
             <section class="play-area">
                 <button id="play-button">PLAY</button>
-                <br>
                 <div>
                 <span id="thrown-span"></span>
                 <br>
                 <span id="message-span">Will you win, lose, or draw?</span>
                 <br>
                 <span id="results-span"></span>
+                <br>
             </div>
                 <br>
                 <button id="reset-button">Reset</button>
+                
+                Number of resets: <span id="reset-span"></span>
             </section>
-
 
     </main>
     <script type="module" src="app.js"></script>
