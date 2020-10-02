@@ -37,7 +37,7 @@ clickButton.addEventListener('click', () => {
     document.getElementById('my-img-rock').src = '';
     document.getElementById('my-img-scissors').src = '';
 
-    thrownSpan.textContent = `Computer chose: ${computerChoice}.`;
+//    thrownSpan.textContent = `Computer chose: ${computerChoice}.`;
     if (computerChoice === 'scissors') {
         document.getElementById('my-img-scissors').src = './assets/scissors.jpeg';
     } else if (computerChoice === 'rock') {

@@ -24,7 +24,6 @@ img {
     width: auto;
     margin: 15px;
     border-radius: 20px;
-    border: purple 2px solid;
 }
 
 div {
@@ -65,4 +64,5 @@ input[type="radio"] + img {
 
 input[type="radio"]:checked + img {
     transform: scale(1.15);
+    border: purple 2px solid;
 }
