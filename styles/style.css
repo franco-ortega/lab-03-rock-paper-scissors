@@ -21,17 +21,20 @@ section {
 
 img {
     height: 225px;
-    width: auto;
+    width: 225;
     margin: 15px;
     border-radius: 20px;
 }
 
 div {
     text-align: center;
+    height: 300px;
+    width: 325px;
 }
 
-.conceal-image {
-    display: none;
+p {
+    height: 20px;
+    margin: 15px;
 }
 
 .rules {
@@ -49,9 +52,16 @@ div {
 
 .play-area {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 
 input[type="radio"] {

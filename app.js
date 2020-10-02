@@ -1,13 +1,12 @@
 import { getRandomThrow, doesUserWin } from './get-random-throw.js';
 
 const clickButton = document.querySelector('#play-button');
-const thrownSpan = document.querySelector('#thrown-span');
 const messageSpan = document.querySelector('#message-span');
 const resultsSpan = document.querySelector('#results-span');
 const resetButton = document.querySelector('#reset-button');
 const resetSpan = document.querySelector('#reset-span');
+const computerChose = document.querySelector('#computer-chose');
 const concealImage = document.querySelector('#conceal-image');
-// const insertImg = document.getElementById('myImg').src = './assets/scissors.jpeg"';
 
 let wins = 0;
 let losses = 0;
@@ -37,7 +36,7 @@ clickButton.addEventListener('click', () => {
     document.getElementById('my-img-rock').src = '';
     document.getElementById('my-img-scissors').src = '';
 
-//    thrownSpan.textContent = `Computer chose: ${computerChoice}.`;
+    computerChose.textContent = 'Computer chose:';
     if (computerChoice === 'scissors') {
         document.getElementById('my-img-scissors').src = './assets/scissors.jpeg';
     } else if (computerChoice === 'rock') {
@@ -47,7 +46,7 @@ clickButton.addEventListener('click', () => {
     }
 
     resultsSpan.textContent = `Wins: ${wins}; Losses ${losses}; Draws: ${draws}`;
-    // concealImage.style.display = 'block';
+
 });
 // ***********END OF PLAY BUTTON**************
 
@@ -60,8 +59,6 @@ resetButton.addEventListener('click', () => {
     resultsSpan.textContent = `Wins: ${wins}; Losses ${losses}; Draws: ${draws}`;
     resetSpan.textContent = resets;
     messageSpan.textContent = '';
-    thrownSpan.textContent = '';
-    // concealImage.style.display = 'none';
     document.getElementById('my-img-paper').src = '';
     document.getElementById('my-img-rock').src = '';
     document.getElementById('my-img-scissors').src = '';
